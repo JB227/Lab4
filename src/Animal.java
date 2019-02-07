@@ -4,7 +4,7 @@
  * @author Stephen Thung
  * @version 2019-01-23
  */
-public class Animal
+public class Animal // Purely for testing purposes
 {
     /**
      * The color of the animal
