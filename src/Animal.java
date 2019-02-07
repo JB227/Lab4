@@ -142,6 +142,15 @@ public class Animal // Purely for testing purposes
         
         // TODO: finish this...
         
-        /* return TODO; */
+        boolean sameName = this.getName().equals(otherAni.getName());
+        boolean sameColor = this.getColor().equals(otherAni.getColor());
+        boolean sameWeight = this.getWeight() == (otherAni.getWeight());
+        boolean sameHeight = this.getHeight() == (otherAni.getHeight());
+        if(sameName == true && sameColor == true && sameWeight == true && sameHeight == true) {
+        	boolean sameAnimal = true;
+        }
+        else {
+        	boolean sameAnimal = false;
+        }
     }
 }
