@@ -11,6 +11,8 @@ public class EquipmentTest{
 	public void EqualsTest() throws AssertException{
 		Equipment Control = new Equipment("Name/1, 10.0, 15.0,Comparison Equipment");
 		Equipment Compare = new Equipment("Name/1, 10.0, 15.0,Comparison Equipment");
+		Equipment Compare2 = new Equipment("Name/1, 20.0, 30.0,Comparison Equipment");
 		Assert.assertEquals(true, Control.equals(Compare));
+		Assert.assertEquals(false, Control.equals(Compare2));
 	}
 }

@@ -29,5 +29,12 @@ public class AnimalTest
     	Assert.assertEquals(100.0, animal.getWeight(), 0.1);
     	Assert.assertEquals(200.0, animal.getHeight(), 0.1);
     }
+    public void equalsTest() throws AssertException{
+    	Animal control = new Animal("Color", "Name", 50.0, 100.0);
+    	Animal compare = new Animal("Color", "Name", 50.0, 100.0);
+    	Animal compare2 = new Animal("Color", "Name", 100.0, 50.0);
+    	Assert.assertEquals(true, control.equals(compare));
+    	Assert.assertEquals(false, control.equals(compare2));
+    }
 }
 
