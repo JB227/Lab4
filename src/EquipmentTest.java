@@ -8,4 +8,9 @@ public class EquipmentTest{
 		Assert.assertEquals(15.0, Equip.getTotalPrice(), 0.1);
 		Assert.assertEquals("Test Equipment", Equip.getDescription());
 	}
+	public void EqualsTest() throws AssertException{
+		Equipment Control = new Equipment("Name/1, 10.0, 15.0,Comparison Equipment");
+		Equipment Compare = new Equipment("Name/1, 10.0, 15.0,Comparison Equipment");
+		Assert.assertEquals(true, Control.equals(Compare));
+	}
 }
